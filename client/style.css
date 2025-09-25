@@ -1,0 +1,5 @@
+
+div#login {border: 2px outset; padding: 0.5em; max-width: 20em; background: #eee}
+label {width: 6em; text-align: right; display: inline-block; color: #555; font-size: 0.9em  }
+form > button {margin-left: 7em; margin-top: 0.6em}
+div#rest {margin-top: 2em}
