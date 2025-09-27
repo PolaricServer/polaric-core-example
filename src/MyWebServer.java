@@ -28,24 +28,16 @@ import java.util.*;
 public class MyWebServer extends WebServer {
     
     public MyWebServer(ServerConfig conf, int port) {
-        super(conf, port, "notify", "/files", "/home/oivindh/src" );
+        super(conf, port, "notify", "/doc", "./doc" );
     }
     
     
     public void start() {
         super.start(); 
         
+        /* Start Test REST API */
         TestApi a1 = new TestApi(_conf);
         a1.start();
-
-        
-        pubSub().createRoom("test", false, false, false, true, String.class);
-        pubSub().createRoom("notify:SYSTEM", false, false, false, true, ServerConfig.Notification.class);
-        pubSub().createRoom("notify:ADMIN", false, false, false, true, ServerConfig.Notification.class);
-        
-        /*
-         * createRoom: room, logged-on, operator, admin, subscribers-can-post, class)
-         */
          
         onLogin( u-> {
             System.out.println("**** LOGIN:"+u+" ****");
