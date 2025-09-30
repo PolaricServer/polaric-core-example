@@ -1,6 +1,6 @@
-package no.arctic.core.test; 
-import no.arctic.core.*;
-import no.arctic.core.httpd.*;
+package no.polaric.core.test; 
+import no.polaric.core.*;
+import no.polaric.core.httpd.*;
 import io.javalin.Javalin;
 import java.util.*;
 

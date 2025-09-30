@@ -15,9 +15,9 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
  
-package no.arctic.core.test; 
-import no.arctic.core.*;
-import no.arctic.core.httpd.*;
+package no.polaric.core.test; 
+import no.polaric.core.*;
+import no.polaric.core.httpd.*;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 import org.pac4j.core.config.Config;

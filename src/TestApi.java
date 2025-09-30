@@ -1,9 +1,9 @@
  
  
-package no.arctic.core.test; 
-import no.arctic.core.*;
-import no.arctic.core.httpd.*;
-import no.arctic.core.auth.*;
+package no.polaric.core.test; 
+import no.polaric.core.*;
+import no.polaric.core.httpd.*;
+import no.polaric.core.auth.*;
 import io.javalin.Javalin;
 
 
