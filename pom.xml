@@ -5,8 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>no.polaric</groupId>
-  <artifactId>arctic-core-test</artifactId>
-  <version>1.0a</version>
+  <artifactId>polaric-core-test</artifactId>
+  <version>1.0</version>
 
   <name>Arctic Core Test</name>
 
@@ -20,8 +20,8 @@
   <dependencies>
         <dependency>
             <groupId>no.polaric</groupId>
-            <artifactId>arctic-core</artifactId>
-            <version>1.0a</version>
+            <artifactId>polaric-core</artifactId>
+            <version>1.0</version>
         </dependency>
     
         <dependency>
