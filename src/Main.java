@@ -19,8 +19,10 @@ public class Main extends ConfigBase implements ServerConfig {
 
       
     /** 
-     * Important settings 
-     * Fixme: Check password file setup in LocalUsers.java
+     * Important settings. 
+     * The alloworigin setting is for CORS access
+     * The other settings are config file locations. Config files are placed the 
+     * conf subdirectory
      */
     private void settings() {
         setProperty("httpserver.alloworigin", ".*");
@@ -47,7 +49,7 @@ public class Main extends ConfigBase implements ServerConfig {
 
 
     /**
-     * Start the server. 
+     * Create and start the webserver. 
      */
     public void start() {
         webserver = new MyWebServer(this, 7070);
@@ -62,8 +64,11 @@ public class Main extends ConfigBase implements ServerConfig {
          for (ServerConfig.SimpleCb f: _shutdown)
             f.cb(); 
     }
-
     
+    
+    /**
+     * The main method. Sets up and runs the server instance. 
+     */
     public static void main(String[] args) 
     {
         Main setup = new Main(); 

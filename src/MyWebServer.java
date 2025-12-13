@@ -24,7 +24,9 @@ import org.pac4j.core.config.Config;
 import org.pac4j.javalin.*;
 import java.util.*;
 
-
+/**
+ * Configuration of the HTTP server. 
+ */
 public class MyWebServer extends WebServer {
     
     public MyWebServer(ServerConfig conf, int port) {
@@ -38,7 +40,11 @@ public class MyWebServer extends WebServer {
         /* Start Test REST API */
         TestApi a1 = new TestApi(_conf);
         a1.start();
-         
+  
+  
+        /* 
+         * Handlers for login and logout. Here we just print message. 
+         */
         onLogin( u-> {
             System.out.println("**** LOGIN:"+u+" ****");
         });
