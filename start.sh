@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
- java -cp target/Arctic-CoreTest-1.0a.jar:lib/* no.arctic.core.test.Main
+ java -cp target/polaric-core-test-1.0.jar:lib/* no.polaric.core.test.Main

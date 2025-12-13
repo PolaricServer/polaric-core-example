@@ -8,7 +8,7 @@
   <artifactId>polaric-core-test</artifactId>
   <version>1.0</version>
 
-  <name>Arctic Core Test</name>
+  <name>Polaric Core Test</name>
 
 
   <properties>
@@ -21,7 +21,7 @@
         <dependency>
             <groupId>no.polaric</groupId>
             <artifactId>polaric-core</artifactId>
-            <version>1.0</version>
+            <version>1.0.2</version>
         </dependency>
     
         <dependency>
