@@ -5,14 +5,14 @@
 
 /* Call foo rest service */
 async function callFoo() {
-    fetch('http://localhost:7070/foo')
+    fetch('http://osys.no:7070/foo')
         .then(res => restresult(res))
 }  
       
 
 /* Call bar REST service with Arctic-Hmac authentication */
 async function callBar(userid) {
-  fetch('http://localhost:7070/bar', {
+  fetch('http://osys.no:7070/bar', {
       headers : await genHeaders(mykey, ""),
   })
     .then(res => restresult(res))
@@ -50,7 +50,7 @@ async function login() {
   const password = document.getElementById("password").value;
   let loginres = document.getElementById("loginresult");
   
-  fetch('http://localhost:7070/directLogin', {
+  fetch('http://osys.no:7070/directLogin', {
     method: 'POST',
     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
