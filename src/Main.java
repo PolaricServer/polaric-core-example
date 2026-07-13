@@ -52,7 +52,7 @@ public class Main extends ConfigBase implements ServerConfig {
      * Create and start the webserver. 
      */
     public void start() {
-        webserver = new MyWebServer(this, 7070);
+        webserver = new MyWebServer(this, 7077);
         webserver.start();
     }
     
