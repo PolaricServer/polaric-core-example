@@ -1,5 +1,5 @@
  /* 
- * Copyright (C) 2025 by LA7ECA, Øyvind Hanssen (ohanssen@acm.org)
+ * Copyright (C) 2025-2026 by LA7ECA, Øyvind Hanssen (ohanssen@acm.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -30,18 +30,21 @@ import java.util.*;
 public class MyWebServer extends WebServer {
     
     public MyWebServer(ServerConfig conf, int port) {
-        super(conf, port, "notify", "/doc", "./doc" );
+        super(conf, port, "notify", "/", "./doc" );
+    }
+    
+    
+    @Override
+    protected void setupRoutes() {
+        /* Start Test REST API */
+        TestApi a1 = new TestApi(_conf);
+        a1.start();
     }
     
     
     public void start() {
         super.start(); 
         
-        /* Start Test REST API */
-        TestApi a1 = new TestApi(_conf);
-        a1.start();
-  
-  
         /* 
          * Handlers for login and logout. Here we just print message. 
          */
