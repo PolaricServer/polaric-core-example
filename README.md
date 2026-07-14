@@ -5,10 +5,10 @@ It is work in progress..
 
 Run script *build.sh* to build. It runs maven and pulls inn library code, including polaric-core
 
-Run script *start.sh*. It will start a server instance listening on port 7070 (you may change this in the code). 
+Run script *start.sh*. It will start a server instance listening on port 7077 (you may change this in the code). 
 
 ## Testing
-A very simple test Javascript app shows how to use the REST API. It has two endpoints 'foo' and 'bar' that just says hello. 'bar' is protected meaning you have to log in to access it. You can log in with username 'admin' and password 'polaric'.
+A simple test Javascript app shows how to use the REST API. It has two endpoints 'foo' and 'bar' that just says hello. 'bar' is protected meaning you have to log in to access it. You can log in with username 'admin' and password 'polaric'.
 
 The Javascript app uses the *SubtleCrypto* interface within the Web Cryptography API to implement the Arctic-HMAC protocol.
 
